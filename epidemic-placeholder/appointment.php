@@ -189,7 +189,7 @@
       <div class="main_menu">
         <div class="container">
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png"
+            <a class="navbar-brand" href="index.php"><img src="assets/images/logo.png"
                 srcset="assets/images/logo-2x.png 2x" alt="" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -197,46 +197,44 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="nav navbar-nav ml-auto">
-                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="index.php">Trang chủ</a></li>
                 <li class="dropdown submenu">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="prevention.html" role="button"
-                    aria-haspopup="true" aria-expanded="false">Phòng chống </a>
-                  <i class="linearicons-chevron-down mobile_dropdown" aria-hidden="true" data-toggle="dropdown"></i>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                        aria-haspopup="true" aria-expanded="false">Phòng chống</a>
+                                    <i class="linearicons-chevron-down mobile_dropdown" aria-hidden="true"
+                                        data-toggle="dropdown"></i>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="symptom.php">Các triệu chứng thường gặp</a></li>
+                                        <li><a href="symptom-checker.php">Kiểm tra triệu chứng</a></li>
+                                        <li><a href="prevention.php">Biện pháp phòng chống</a></li>
+                                        <li><a href="virus-checker.php">Theo dõi tình hình</a></li>
+                                    </ul>
+
+                <li class="dropdown submenu active">
+                 <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tư vấn </a>
+                 <i class="linearicons-chevron-down mobile_dropdown" aria-hidden="true" data-toggle="dropdown"></i>
                   <ul class="dropdown-menu">
-                    <li class="dropdown submenu">
-                      <a class="dropdown-toggle" data-toggle="dropdown" href="symptom.html" role="button"
-                        aria-haspopup="true" aria-expanded="false">Các triệu chứng
-                        <i class="linearicons-chevron-right mobile_dropdown" aria-hidden="true"
-                          data-toggle="dropdown"></i>
-                      </a>
-                      <ul class="dropdown-menu">
-                          <li><a href="symptom.html">Các triệu chứng thường gặp</a></li>
-                          <li><a href="symptom-checker.html">Kiểm tra triệu chứng</a></li>
-                          <li><a href="prevention.html">Biện pháp phòng chống</a></li>
-                          <li><a href="virus-checker.html">Theo dõi tình hình</a></li>
-                      </ul>
-                    </li>
+                       <li><a href="appointment.php">Tư vấn online</a></li>
+                       <li><a href="dang_ky_xet_nghiem.php">Đăng ký xét nghiệm</a></li>
                   </ul>
-                </li>
-                <li class="active"><a href="appointment.html">Tư vấn</a></li>
                 <li class="dropdown submenu">
                   <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                     aria-expanded="false">Giới thiệu</a>
                   <i class="linearicons-chevron-down mobile_dropdown" aria-hidden="true" data-toggle="dropdown"></i>
                   <ul class="dropdown-menu">
-                    <li><a href="about.html">Corona Virus</a></li>
-                    <li><a href="doctors.html">Đội ngũ bác sĩ</a></li>
-                    <li><a href="sample-right-sidebar.html">Vaccine phòng COVID-19</a></li>
+                    <li><a href="about.php">Corona Virus</a></li>
+                    <li><a href="doctors.php">Đội ngũ bác sĩ</a></li>
+                    <li><a href="sample-right-sidebar.php">Vaccine phòng COVID-19</a></li>
                   </ul>
                 </li>
-                <li class="dropdown submenu active">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="blog.html" role="button" aria-haspopup="true" aria-expanded="false"><a href ="blog.html">Tin tức</a></a>
+                <li >
+                <a class="dropdown-toggle" data-toggle="dropdown" href="blog.php" role="button" aria-haspopup="true" aria-expanded="false"><a href ="blog.php">Tin tức</a></a>
                 </li>
-                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="contact.php">Liên hệ</a></li>
                 </ul>
               <ul class="nav navbar-nav navbar-right">
                 <li class="checker_btn">
-                  <a href="symptom-checker.html"></i> Kiểm tra triệu chứng</a>
+                  <a href="symptom-checker.php"></i> Kiểm tra triệu chứng</a>
                 </li>
               </ul>
             </div>
@@ -267,8 +265,8 @@
           <h6 class="wow fadeInUp">Tham khảo ý kiến của các chuyên gia</h6>
           <h3 class="wow fadeInUp" data-wow-delay="0.2s">Tư vấn online</h3>
           <ul class="nav justify-content-center wow fadeInUp" data-wow-delay="0.3s">
-            <li><a href="index.html">Trang chủ</a></li>
-            <li><a href="doctors.html">Tư vấn</a></li>
+            <li><a href="index.php">Trang chủ</a></li>
+            <li><a href="doctors.php">Tư vấn</a></li>
           </ul>
         </div>
         <div class="row appointment_box">
@@ -328,20 +326,23 @@
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input class="form-control" type="text" id="a_email" name="a_email" placeholder="" />
-                    <label><i class="linearicons-envelope-open"></i>Email</label>
+                    <input class="form-control" type="text" id="a_name" name="a_name" placeholder="" />
+                    <label><i class="linearicons-user">Giới tính</i></br>
+                    <form action="" method="post"><br>
+                    Nam <input type="radio" name="gender" value="Nam"> Nữ <input type="radio" name="gender" value="Nữ"><br>
+                    </form></label>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input class="form-control" type="text" id="skype" name="skype" placeholder="" />
-                    <label><i class="fab fa-skype"></i>Skype ID</label>
+                    <input class="form-control" type="text" id="a_name" name="a_name" placeholder="" />
+                    <label><i class="linearicons-user"></i>Email</label>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input class="form-control" type="text" id="a_number" name="a_number" placeholder="" />
-                    <label><i class="linearicons-telephone"></i>Số điện thoại</label>
+                    <input class="form-control" type="text" id="a_name" name="a_name" placeholder="" />
+                    <label><i class="linearicons-user"></i>Số điện thoại</label>
                   </div>
                 </div>
                 <div class="col-lg-6">
@@ -574,7 +575,6 @@
                   </div>
                 </div>
                 </div>
-           
                    </div>
       </div>
       <div class="footer_copyright">

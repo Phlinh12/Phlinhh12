@@ -7080,6 +7080,12 @@ blockquote {
   display: flex;
   justify-content: center;
 }
+.appoinment_form .form-kt{
+  position: relative ;
+  font-size: 30px!important ;
+  display: flex ;
+  left: 31px ;
+}
 
 /* End Footer Area css
 ============================================================================================ */
