@@ -282,13 +282,29 @@
                             <li class="active" data-filter="*">
                                 <a href="#"><i class="linearicons-icons"></i></a>
                             </li>
-                            <li data-filter=".comm"><a href="#"><b>Diễn biến dịch bệnh</b></a></li>
-                            <li data-filter=".medi"><a href="#"><b>Chiến dịch tiêm chủng</b></a></li>
-                            <li data-filter=".health"><a href="#"><b>Thuốc điều trị </b></a></li>
-                            <li data-filter=".eff"><a href="#"><b>Ảnh hưởng của đại dịch </b></a></li>
-                            <li data-filter=".pre"><a href="#"><b>Cách phòng chống</b></a></li>
-                            <li data-filter=".edu"><a href="#"><b>Các nghiên cứu</b></a></li>
-                            
+                            <?php
+                            // 1. Load file cấu hình để kết nối đến máy chủ CSDL, CSDL
+                             include('config.php');
+
+                            // 2. Viết câu lệnh truy vấn để lấy ra được DỮ LIỆU MONG MUỐN (TIN TỨC đã lưu trong CSDL)
+                                $sql = " SELECT * 
+                                                FROM tbl_tin_tuc, tbl_chu_de
+                                                 where tbl_tin_tuc.chu_de_id= tbl_chu_de.chu_de_id ORDER BY tbl_tin_tuc.chu_de_id DESC";
+                            // 3. Thực thi câu lệnh truy vấn (mục đích trả về dữ liệu các bạn cần)
+                                $noi_dung_tin_tuc = mysqli_query($ket_noi, $sql);
+
+                             // 4. Hiển thị ra dữ liệu mà các bạn vừa lấy được
+                             while ($row = mysqli_fetch_array($noi_dung_tin_tuc)) 
+
+                            {
+                             ;?>
+                            <li data-filter=".comm"><a href="#"><b><?php echo $row["chu_de"];?></b></a></li>
+                            <?php 
+                             }
+
+                            // 5. Đóng kết nối sau khi sử dụng xong
+                            mysqli_close($ket_noi);
+                        ;?>
                         </ul>
                     </div>
                 </div>
@@ -299,12 +315,9 @@
                     include('config.php');
 
                     // 2. Viết câu lệnh truy vấn để lấy ra được DỮ LIỆU MONG MUỐN (TIN TỨC đã lưu trong CSDL)
-                    $sql = "
-                              SELECT * 
-                              FROM tbl_tin_tuc 
-                              ORDER BY tin_tuc_id DESC
-                              ";
-
+                    $sql = " SELECT * 
+                                                FROM tbl_tin_tuc, tbl_chu_de
+                                                 where tbl_tin_tuc.chu_de_id= tbl_chu_de.chu_de_id ORDER BY tbl_tin_tuc.chu_de_id DESC";
                     // 3. Thực thi câu lệnh truy vấn (mục đích trả về dữ liệu các bạn cần)
                     $noi_dung_tin_tuc = mysqli_query($ket_noi, $sql);
 
@@ -331,7 +344,7 @@
                                     <a href="single-blog.php?id=<?php echo $row['tin_tuc_id'];?>">
                                         <h3><?php echo $row["tieu_de"] ;?><br /></h3>
                                     </a>
-                                    <a class="text_btn"  <td style="text-align: center;"  href="single-blog.php?id=<?php echo $row['tin_tuc_id'];?>">Đọc thêm <i class="linearicons-arrow-right"></i></a>
+                                    <a class="text_btn" href="single-blog.php?id=<?php echo $row['tin_tuc_id'];?>">Đọc thêm <i class="linearicons-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -350,8 +363,7 @@
                                 <li class="page-item"><a class="page-link" >1</a></li>
                                 <li class="page-item active"><a class="page-link">2</a></li>
                                 <li class="page-item"><a class="page-link" >3</a></li>
-                                <li class="page-item blank"><a class="page-link" href="#">...</a></li>
-                                <li class="page-item"><a class="page-link" >7</a></li>
+                                
                             </ul>
                         </nav>
                     

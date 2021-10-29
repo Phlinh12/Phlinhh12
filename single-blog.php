@@ -2,206 +2,46 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link rel="icon" href="assets/images/favicon.png" type="image/png" />
-  <title>COVID - 19</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.css" />
-  <link rel="stylesheet" href="assets/vendors/linearicons/css/linearicons.css" />
-  <link rel="stylesheet" href="assets/vendors/slick/slick.css" />
-  <link rel="stylesheet" href="assets/vendors/slick/slick-theme.css" />
-  <link rel="stylesheet" href="assets/vendors/mCustomScrollbar/jquery.mCustomScrollbar.min.css" />
-  <link rel="stylesheet" href="assets/vendors/animate-css/animate.css" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+    <title>COVID - 19</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="assets/vendors/linearicons/css/linearicons.css" />
+    <link rel="stylesheet" href="assets/vendors/slick/slick.css" />
+    <link rel="stylesheet" href="assets/vendors/slick/slick-theme.css" />
+    <link rel="stylesheet" href="assets/vendors/mCustomScrollbar/jquery.mCustomScrollbar.min.css" />
 
-  <!-- main css -->
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
 </head>
 
-<body data-scroll-animation="true">
-  <div class="body_wrapper">
+<body>
+    <div class="body_wrapper">
 
-    <!--================Preloader Area =================-->
-    <div class="preloader">
-      <div class="three-bounce">
-        <div class="one"></div>
-        <div class="two"></div>
-        <div class="three"></div>
-      </div>
-    </div>
-    <!--================End Preloader Area =================-->
-
-    <!--================Mobile Canvus Menu Area =================-->
-    <div class="mobile_canvus_menu">
-      <div class="close_btn">
-        <img src="assets/images/icon/close-dark.png" alt="">
-      </div>
-      <div class="menu_part_lux">
-        <ul class="menu_list wd_scroll">
-          <li><a href="index.html">Trang chủ</a></li>
-          <li>
-            <a href="index.html">Phòng chống
-              <i class="linearicons-chevron-down"></i>
-            </a>
-            <ul class="list">
-              <li><a href="symptom.html">Hệ thống</a></li>
-              <li><a href="symptom-checker.html">Kiểm tra triệu chứng</a></li>
-              <li><a href="prevention.html">P</a></li>
-              <li><a href="virus-checker.html">Coronavirus Checker</a></li>
-              <li><a href="tracker.html">Tracker</a></li>
-              <li><a href="maintenance.html">Maintenance</a></li>
-              <li><a href="faq.html">Faqs</a></li>
-            </ul>
-          </li>
-          <li><a href="appointment.html">Appointment</a></li>
-          <li class="active">
-            <a href="#">Pages
-              <i class="linearicons-chevron-down"></i>
-            </a>
-            <ul class="list">
-              <li><a href="about.html">About</a></li>
-              <li><a href="doctors.html">Doctors</a></li>
-              <li><a href="sample-right-sidebar.html">Simple Sidebar</a></li>
-              <li><a href="typography.html">Typhography</a></li>
-              <li><a href="search.html">Search</a></li>
-              <li><a href="search-nothing.html">Not Found</a></li>
-              <li><a href="comingsoon.html">Coming Soon</a></li>
-              <li><a href="404.html">Error</a></li>
-            </ul>
-          </li>
-
-          <li>
-            <a href="index.html">Blog
-              <i class="linearicons-chevron-down"></i>
-            </a>
-            <ul class="list">
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="single-blog.html">Blog Details</a></li>
-
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="menu_btm">
-        <a class="green_btn" href="#"><i class="linearicons-pulse"></i> Symptom Checker</a>
-      </div>
-    </div>
-    <!--================End Mobile Canvus Menu Area =================-->
-    <!--================Sidebar Form Area =================-->
-    <div class="body_capture"></div>
-    <section class="sidebar_widget scroll_body">
-      <div class="info_sidebar_inner">
-        <div class="close_btn">
-          <img src="assets/images/icon/close.png" alt="">
-        </div>
-        <ul class="nav info_social">
-          <li>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-vimeo-v"></i></a>
-          </li>
-        </ul>
-        <div class="info_title">
-          <h2>Get in touch</h2>
-          <p>If you have any question before we start, please fill below the contact form.</p>
-        </div>
-        <form action="#" class="appoinment_form js-form">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="form-group">
-                <input class="form-control" type="text" id="name" name="name" placeholder="" required />
-                <label><i class="linearicons-user"></i>Your Name</label>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="form-group">
-                <input class="form-control" type="text" id="email" name="email" placeholder="" required />
-                <label><i class="linearicons-envelope-open"></i>Your Email
-                  Address</label>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="form-group">
-                <input class="form-control" type="text" id="number" name="number" placeholder="" required />
-                <label><i class="linearicons-telephone"></i>Your Phone
-                  Number</label>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="form-group">
-                <textarea name="message" id="message" cols="30" rows="10" class="form-control" required></textarea>
-                <label><i class="linearicons-document"></i>Your Message</label>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="form-group checkbox_field">
-                <div class="checkbox">
-                  <input type="checkbox" value="None" id="squared2" name="check" />
-                  <label class="l_text" for="squared2">I accept the <span>Privacy Policy</span></label>
-                </div>
-                <button type="submit" class="green_btn" name="appoinment" id="appoinment" value="appoinment"
-                  data-value="appoinment">
-                  Submit
-                </button>
-              </div>
-            </div>
+        <!--================Preloader Area =================-->
+        <div class="preloader">
+          <div class="three-bounce">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
           </div>
-        </form>
-        <div class="info_footer">
-          <p>© Copyright
-            <script>
-              document.write(new Date().getFullYear());
-            </script> Epidemic Organisation Ltd.
-          </p>
-          <h6>
-            Designed with <i class="linearicons-heart"></i>
-            by <span>creakits</span>
-          </h6>
         </div>
-      </div>
-    </section>
-    <!--================End Sidebar Form Area =================-->
+        <!--================End Preloader Area =================-->
 
-    <!--================Header Area =================-->
-    <header class="header_area">
-      <ul class="nav menu_social flex-column">
-        <li>
-          <a href="#"><i class="fab fa-facebook"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-        </li>
-      </ul>
-      <div class="main_menu">
-        <div class="container">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png"
-                srcset="assets/images/logo-2x.png 2x" alt="" /></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="nav navbar-nav ml-auto">
-<li><a href="index.php">Trang chủ</a></li>
-                                <li class="dropdown submenu">
+        <!--================Mobile Canvus Menu Area =================-->
+        <div class="mobile_canvus_menu">
+            <div class="close_btn">
+                <img src="assets/images/icon/close-dark.png" alt="">
+            </div>
+            <div class="menu_part_lux">
+                <ul class="menu_list wd_scroll">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li class="dropdown submenu">
                                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                                         aria-haspopup="true" aria-expanded="false">Phòng chống</a>
                                     <i class="linearicons-chevron-down mobile_dropdown" aria-hidden="true"
@@ -213,14 +53,14 @@
                                         <li><a href="virus-checker.php">Theo dõi tình hình</a></li>
                                     </ul>
                   </li>
-                                <li class="dropdown submenu active">
-                 <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tư vấn </a>
-                 <i class="linearicons-chevron-down mobile_dropdown" aria-hidden="true" data-toggle="dropdown"></i>
-                  <ul class="dropdown-menu">
-                       <li><a href="appointment.php">Tư vấn online</a></li>
-                       <li><a href="dang_ky_xet_nghiem.php">Đăng ký xét nghiệm</a></li>
-                  </ul>
-                                <li class="dropdown submenu">
+                    <li class="dropdown submenu active">
+                         <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tư vấn </a>
+                         <i class="linearicons-chevron-down mobile_dropdown" aria-hidden="true" data-toggle="dropdown"></i>
+                              <ul class="dropdown-menu">
+                                   <li><a href="appointment.php">Tư vấn online</a></li>
+                                   <li><a href="dang_ky_xet_nghiem.php">Đăng ký xét nghiệm</a></li>
+                              </ul>
+                    <li class="dropdown submenu">
                                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                                         aria-haspopup="true" aria-expanded="false">Giới thiệu</a>
                                     <i class="linearicons-chevron-down mobile_dropdown" aria-hidden="true"
@@ -243,121 +83,247 @@
                                 </li>
                             </ul>
             </div>
-          </nav>
+            <div class="menu_btm">
+                <a class="green_btn" href="#"><i class="linearicons-pulse"></i> Symptom Checker</a>
+            </div>
         </div>
-        <div class="right_burger">
-          <ul class="nav">
-            <li>
-              <div class="search_btn" data-toggle="modal" data-target="#exampleModal">
-                <img src="assets/images/icon/search.png" alt="" />
-              </div>
-            </li>
-            <li>
-              <div class="menu_btn">
-                <img src="assets/images/icon/burger.png" alt="" />
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <!--================End Header Area =================-->
-    <!--================Breadcrumb Area =================-->
-    <section class="breadcrumb_area">
-      <div class="container">
-        <div class="breadcrumb_text">
-          <h6 class="wow fadeInUp" data-wow-delay="0.2s">COVID-19 the disease</h6>
-          <h3 class="wow fadeInUp" data-wow-delay="0.2s">About the Coronavirus</h3>
-          <ul class="nav justify-content-center wow fadeInUp" data-wow-delay="0.3s">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#">About COVID-19</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <!--================End Breadcrumb Area =================-->
-    <!--================Single Blog Content Area =================-->
+        <!--================End Mobile Canvus Menu Area =================-->
+
+        <!--================Header Area =================-->
+        <header class="header_area white_header">
+            <ul class="nav menu_social flex-column">
+                <li>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+            <div class="main_menu">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/images/logo-2.png" srcset="assets/images/logo-2-2x.png 2x" alt="" />
+                            <img src="assets/images/logo.png" srcset="assets/images/logo-2x.png 2x" alt="" />
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav ml-auto">
+                                <li><a href="index.html">Trang chủ</a></li>
+                                <li class="dropdown submenu">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="prevention.php" role="button"
+                                        aria-haspopup="true" aria-expanded="false">Phòng chống</a>
+                                    <i class="fas fa-angle-down" aria-hidden="true" data-toggle="dropdown"></i>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="symptom.php">Các triệu chứng thường gặp</a></li>
+                                        <li><a href="symptom-checker.php">Kiểm tra triệu chứng</a></li>
+                                        <li><a href="prevention.php">Biện pháp phòng chống</a></li>
+                                        <li><a href="virus-checker.php">Theo dõi tình hình</a></li>
+                                    </ul>
+                  </li>
+                                <li class="dropdown submenu active">
+                         <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tư vấn </a>
+                         <i class="fas fa-angle-down" aria-hidden="true" data-toggle="dropdown"></i>
+                              <ul class="dropdown-menu">
+                                   <li><a href="appointment.php">Tư vấn online</a></li>
+                                   <li><a href="dang_ky_xet_nghiem.php">Đăng ký xét nghiệm</a></li>
+                              </ul>
+                                <li class="dropdown submenu">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                        aria-haspopup="true" aria-expanded="false">Giới thiệu</a>
+                                    <i class="fas fa-angle-down" aria-hidden="true" data-toggle="dropdown"></i>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="about.html">Corona Virus</a></li>
+                                        <li><a href="doctors.html">Đội ngũ bác sĩ</a></li>
+                                        <li><a href="sample-right-sidebar.html">Sự lây lan của COVID-19</a></li>
+                                        
+                                    </ul>
+                                </li>
+                                <li class="dropdown submenu active">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="blog.php" role="button" aria-haspopup="true" aria-expanded="false"><a href ="blog.php">Tin tức</a></a>
+                                </li>
+                                <li><a href="contact.php">Liên hệ</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="checker_btn">
+                                    <a href="#"></i>Kiểm tra triệu chứng</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="right_burger">
+                    <ul class="nav">
+                        <li>
+                            <div class="search_btn" data-toggle="modal" data-target="#exampleModal">
+                                <img src="assets/images/icon/search-white.png" alt="" />
+                                <img src="assets/images/icon/search.png" alt="" />
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu_btn">
+                                <img src="assets/images/icon/burger-white.png" alt="" />
+                                <img src="assets/images/icon/burger.png" alt="" />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!--================End Header Area =================-->
+        <!--================Sidebar Form Area =================-->
+        <div class="body_capture"></div>
+        <section class="sidebar_widget scroll_body">
+            <div class="info_sidebar_inner">
+                <div class="close_btn">
+                    <img src="assets/images/icon/close.png" alt="">
+                </div>
+                <ul class="nav info_social">
+                    <li>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                    </li>
+                </ul>
+                <div class="info_title">
+                    <h2>Liên lạc</h2>
+                    <p>Nếu bạn có bất kỳ câu hỏi nào trước khi chúng tôi bắt đầu, vui lòng điền vào bên dưới biểu mẫu liên hệ.</p>
+                </div>
+                <form action="#" class="appoinment_form js-form">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <input class="form-control" type="text" id="a_name" name="a_name" placeholder=""
+                                    required />
+                                <label><i class="linearicons-user"></i>Họ và tên</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <input class="form-control" type="text" id="a_email" name="a_email" placeholder=""
+                                    required />
+                                <label><i class="linearicons-envelope-open"></i> Email</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <input class="form-control" type="text" id="a_number" name="a_number" placeholder=""
+                                    required />
+                                <label><i class="linearicons-telephone"></i>Số điện thoại</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <textarea name="a_message" id="a_message" cols="30" rows="10" class="form-control"
+                                    required></textarea>
+                                <label><i class="linearicons-document"></i>Nội dung</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group checkbox_field">
+                                <div class="checkbox">
+                                    <input type="checkbox" value="None" id="a_policy" name="check" />
+                                    <label class="l_text" for="a_policy">Tôi đồng ý với <span>Chính sách bảo mật</span></label>
+                                </div>
+                                <button type="submit" class="green_btn" name="appoinment" id="appoinment"
+                                    value="appoinment" data-value="appoinment">
+                                    Gửi
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="success-message">
+                        <i class="fa fa-check text-primary"></i> Cảm ơn bạn!. Phản hồi của bạn đã được gửi thành công ......
+                    </div>
+                    <div class="error-message">Chúng tôi xin lỗi, có thông tin bị lỗi</div>
+                </form>
+                <div class="info_footer">
+                    <p>© Copyright
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script> Epidemic Organisation Ltd.
+                    </p>
+                    <h6>
+                        Designed <i class="linearicons-heart"></i>
+                        by <span>Nhóm HANL</span>
+                    </h6>
+                </div>
+            </div>
+        </section>
+        <!--================End Sidebar Form Area =================-->
+
+        <!--================Breadcrumb Area =================-->
+        <section class="breadcrumb_area">
+            <div class="container">
+                <div class="breadcrumb_text">
+                    <h6 class="wow fadeInUp">Trung tâm y tế quận Hoàn Kiếm</h6>
+                    <h3 class="wow fadeInUp" data-wow-delay="0.2s">Tin tức mới nhất</h3>
+                    <ul class="nav justify-content-center wow fadeInUp" data-wow-delay="0.3s">
+                        <li><a href="index.php">Trang chủ</a></li>
+                        <li><a href="blog.php">Tin tức</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--================End Breadcrumb Area =================-->
+
+        <!--================Single Blog Content Area =================-->
         <section class="single_blog_area">
             <div class="container">
                 <div class="row single_blog_inner">
-                    <div class="col-lg-9">
+                <?php 
+                    // 1. Load file cấu hình để kết nối đến máy chủ CSDL, CSDL
+                    include('config.php');
+
+                    // 2. Viết câu lệnh truy vấn để lấy ra được DỮ LIỆU MONG MUỐN (TIN TỨC đã lưu trong CSDL)
+                   $id_tin = $_GET["id"];
+                    
+                    $sql = " SELECT * 
+                            FROM tbl_tin_tuc, tbl_chu_de
+                            where tbl_tin_tuc.chu_de_id= tbl_chu_de.chu_de_id and tbl_tin_tuc.tin_tuc_id=".$id_tin." ORDER BY  tbl_tin_tuc.chu_de_id DESC";
+
+                    // 3. Thực thi câu lệnh truy vấn (mục đích trả về dữ liệu các bạn cần)
+                    $noi_dung_tin_tuc = mysqli_query($ket_noi, $sql);
+
+                    // 4. Hiển thị ra dữ liệu mà các bạn vừa lấy được
+                    $row = mysqli_fetch_array($noi_dung_tin_tuc);
+                     ?>
+                        <div class="col-lg-9">
                         <div class="single_blog_text_inner">
                             <div class="single_first_text">
-                                <h6>Nếu bạn có các dấu hiệu hoặc triệu chứng của bệnh COVID-19, cần phải liên hệ ngay với đường dây nóng của Bộ Y tế (1900.9095) hoặc trung tâm y tế gần nhất để được tư vấn cụ thể. Nhưng COVID-19, bệnh cảm lạnh thông thường, dị ứng theo mùa và cảm cúm gây ra nhiều triệu chứng tương tự nhau. 
-                                </h6>
+                                <h1><?php echo $row["tieu_de"];?></h1>
                                 <div class="media">
-                                    <div class="d-flex">
-                                        <span>L</span>
-                                    </div>
                                     <div class="media-body">
-                                        <p> Làm thế nào để phân biệt liệu mình có mắc COVID-19 hay không? Hiểu sự khác biệt về các triệu chứng mà những căn bệnh này gây ra, cũng như cách chúng được lây lan để có thể điều trị và có thể ngăn ngừa kịp thời.Chúng ta cần hiểu sự khác biệt về các triệu chứng mà những căn bệnh này gây ra, cũng như cách chúng được lây lan để có thể điều trị và có thể ngăn ngừa kịp thời.
-                                        </p>
+                                        <h4><i> <?php echo $row["mo_ta"];?></i></h4>
                                     </div>
                                 </div>
                                 
                             </div>
                             <div class="secand_part">
-                                <h4>COVID-19 là gì? Tại sao chúng lây lan mạnh và làm thế nào để điều trị?</h4>
-                                <p>COVID-19 là một bệnh truyền nhiễm đường hô hấp do nhiễm virus SARS-CoV-2. Bệnh thường lây lan giữa những người tiếp xúc gần (trong vòng 2 mét). Virus lây lan qua các giọt bắn khi một người thở, ho, hắt hơi, nói chuyện hoặc hát. Những giọt bắn này có thể rơi vào miệng hoặc mũi của ai đó gần đó hoặc được hít vào. Virus cũng có thể lây lan nếu một người chạm vào bề mặt hoặc vật thể có virus và sau đó chạm vào miệng, mũi hoặc mắt của họ, mặc dù đây không được coi là đường lây lan chính.
-                                </p>
-                                <h5>Các triệu chứng phổ biến nhất của COVID-19 là sốt, ho và mệt mỏi. Nhưng có nhiều dấu hiệu và triệu chứng khác cũng có thể xảy ra.
-                                </h5>
-                                <p>Hiện tại, chỉ có một loại thuốc kháng virus, được gọi là remdesivir, được chấp thuận để điều trị COVID-19. Một số loại thuốc có thể giúp giảm mức độ nghiêm trọng của COVID-19. Cơ quan Quản lý Thực phẩm và Dược phẩm Hoa Kỳ đã cấp phép sử dụng khẩn cấp hai loại vaccine ngừa COVID-19.
-                                </p>
-                            </div>
-                            <div class="secand_part">
-                                <h4>Sự khác biệt giữa COVID-19 và cảm lạnh thông thường là gì?</h4>
-                                <p>Cả COVID-19 và cảm lạnh thông thường đều do virus gây ra. COVID-19 do SARS-CoV-2 gây ra, trong khi cảm lạnh thông thường thường do rhinovirus gây ra. Những virus này lây lan theo những cách tương tự nhau và gây ra nhiều dấu hiệu và triệu chứng giống nhau. Tuy nhiên, có một vài điểm khác biệt.
-                                </p>
-                                <p>Trong khi các triệu chứng COVID-19 thường xuất hiện từ 2 đến 14 ngày sau khi tiếp xúc với SARS-CoV-2, các triệu chứng của cảm lạnh thông thường thường xuất hiện từ 1 đến 3 ngày sau khi tiếp xúc với virus gây cảm lạnh.
-                                </p>
-                                <p>Không có thuốc chữa cảm lạnh thông thường. Điều trị có thể bao gồm thuốc giảm đau và thuốc trị cảm lạnh không kê đơn, chẳng hạn như thuốc thông mũi. Không giống như COVID-19, cảm lạnh thường vô hại. Hầu hết mọi người đều hồi phục sau cảm lạnh thông thường trong vòng 3 đến 10 ngày.
-                                </p>
                                 
-                                <img class="img-fluid" src="assets/images/blog/single-blog-1.png" alt="">
-                                <p class="source">Source: Mayoclinic</p>
-                                <h4>Sự khác biệt giữa COVID-19 và dị ứng theo mùa là gì?</h4>
-                                <p>Không giống như COVID-19, dị ứng theo mùa không do virus gây ra. Dị ứng theo mùa là phản ứng của hệ thống miễn dịch được kích hoạt do tiếp xúc với các chất gây dị ứng, chẳng hạn như phấn hoa hoặc cỏ theo mùa.
-                                </p>
-                                <p>COVID-19 và dị ứng theo mùa gây ra nhiều dấu hiệu và triệu chứng giống nhau. Tuy nhiên, có một số khác biệt.
-                                </p>
-                                <img class="img-fluid" src="assets/images/blog/single-blog-2.png" alt="">
-                                <p class="source">Source: Mayoclinic</p>
-                                <p>Ngoài ra, mặc dù COVID-19 có thể gây khó thở hoặc thở gấp, nhưng dị ứng theo mùa thường không gây ra các triệu chứng này trừ khi bạn bị bệnh hô hấp như hen suyễn từ trước. Điều trị dị ứng theo mùa có thể bao gồm thuốc kháng histamine không kê đơn hoặc kê đơn, thuốc xịt steroid và thuốc thông mũi, và tránh tiếp xúc với chất gây dị ứng nếu có thể. Dị ứng theo mùa có thể kéo dài vài tuần.
-                                </p>
-                                <h4>Sự khác biệt giữa COVID-19 và dị ứng theo mùa là gì?</h4>
-                                <p>COVID-19 và bệnh cúm đều là những bệnh truyền nhiễm đường hô hấp do virus gây ra. COVID-19 do virus SARS-CoV-2 gây ra, trong khi bệnh cúm do virus cúm A và B. Những virus này lây lan theo những cách tương tự.
-                                </p>
-                                <p>COVID-19 và bệnh cúm gây ra các triệu chứng tương tự. Các bệnh này cũng có thể không gây ra triệu chứng hoặc các triệu chứng nhẹ hoặc nghiêm trọng. Vì có nhiều điểm tương đồng, khó có thể chẩn đoán bạn mắc bệnh nào nếu chỉ dựa vào các triệu chứng. Xét nghiệm có thể được thực hiện để xem liệu bạn có bị nhiễm COVID-19 hay bệnh cúm hay không. Bạn cũng có thể mắc cả hai bệnh cùng một lúc. Tuy nhiên, chúng vẫn có một số khác biệt.
-                                </p>
-                                <img class="img-fluid" src="assets/images/blog/single-blog-3.png" alt="">
-                                <p class="source">Source: Mayoclinic</p>
-                                <p>Các triệu chứng COVID-19 thường xuất hiện từ 2 đến 14 ngày sau khi tiếp xúc với SARS-CoV-2. Các triệu chứng cúm thường xuất hiện khoảng 1 đến 4 ngày sau khi tiếp xúc với virus cúm.
-                                </p>
-                                <p>COVID-19 có thể gây ra các bệnh nghiêm trọng hơn ở một số người so với bệnh cúm. Ngoài ra, COVID-19 có thể gây ra các biến chứng khác với bệnh cúm, chẳng hạn như cục máu đông và hội chứng viêm đa hệ ở trẻ em.
-                                </p>
-                                <p>Mặc dù chỉ có một phương pháp điều trị kháng virus COVID-19, nhưng có một số loại thuốc kháng virus có thể được sử dụng để điều trị bệnh cúm. Ngoài ra, bạn có thể tiêm phòng cúm hàng năm để giúp giảm nguy cơ mắc bệnh cúm. Thuốc chủng ngừa cúm cũng có thể làm giảm mức độ nghiêm trọng của bệnh cúm và nguy cơ biến chứng nghiêm trọng. Vaccine có thể được tiêm dưới dạng tiêm hoặc xịt mũi.
-                                </p>
-                                <h4>Làm thế nào bạn có thể tránh bị COVID-19, cảm lạnh và cúm?</h4>
-                                <p>Bạn có thể giảm nguy cơ nhiễm virus gây ra COVID-19, cảm lạnh và cúm bằng cách tuân theo một số biện pháp phòng ngừa tiêu chuẩn. Nghiên cứu cho thấy rằng thực hiện theo các biện pháp này, chẳng hạn như giãn cách xã hội và đeo khẩu trang, có thể giúp rút ngắn thời gian của mùa cúm và giảm bớt số người bị ảnh hưởng trong mùa cúm 2019-2020.
-                                </p>
-                                <p>Các biện pháp phòng ngừa tiêu chuẩn để giảm nguy cơ mắc COVID-19, cảm lạnh và cúm bao gồm:
-                                    <li>Tránh tiếp xúc gần (trong vòng 2 mét) với bất kỳ ai bên ngoài hộ gia đình của bạn</li>
-                                    <li>Đeo khẩu trang bằng vải khi ở nơi công cộng, chẳng hạn như cửa hàng tạp hóa, nơi bạn khó tránh tiếp xúc gần với người khác</li>
-                                    <li>Thường xuyên rửa tay bằng xà phòng và nước trong ít nhất 20 giây hoặc sử dụng chất khử trùng tay có cồn có chứa ít nhất 60% cồn</li>
-                                    <li>Tránh không gian đông đúc trong nhà</li>
-                                    <li>Che miệng và mũi bằng khuỷu tay hoặc khăn giấy khi ho hoặc hắt hơi</li>
-                                    <li>Tránh chạm vào mắt, mũi và miệng của bạn</li>
-                                    <li>Làm sạch và khử trùng các bề mặt dễ tiếp xúc, chẳng hạn như tay nắm cửa, công tắc đèn, thiết bị điện tử và quầy hàng ngày</li>
-                                </p>
-                                <p>Ngoài ra, hãy tiêm phòng cúm hàng năm và khi có thể, hãy tiêm phòng COVID-19.</p>
-                                <h4>Làm thế nào bạn có thể ngăn ngừa dị ứng?</h4>
-                                <p>Cách tốt nhất để ngăn ngừa dị ứng theo mùa là tránh tiếp xúc với các tác nhân gây dị ứng mà bạn đã biết. Nếu bạn bị dị ứng với phấn hoa, hãy ở trong nhà, đóng cửa sổ và cửa ra vào khi lượng phấn hoa nhiều. Ngoài ra, đeo khẩu trang cũng là một cách tốt để ngăn bạn hít phải các tác nhân gây dị ứng như phấn hoa…
-                                </p>
-                                <p>Nếu bạn nghĩ rằng mình có thể có các dấu hiệu hoặc triệu chứng của COVID-19, hãy thông báo ngay với cơ sở y tế gần nhất hoặc đường dây nóng của Bộ Y tế (1900.9095). Hãy nhớ rằng, thực hiện các biện pháp phòng ngừa như đeo khẩu trang, giãn cách xã hội có thể giúp bạn khỏe mạnh và giảm nguy cơ bị bệnh với COVID-19, bệnh cúm hoặc cảm lạnh thông thường.
-                                </p>
+                                <p><?php echo $row["noi_dung"]; ?></p>
+                                
                             </div>
+             
+                    
+                            
                             <div class="single_blog_bottom">
                                 <div class="row m-0 justify-content-between">
                                     <div class="left">
