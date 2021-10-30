@@ -101,10 +101,6 @@
                                                 <label for="txtAnhMinhHoa">Ảnh minh họa</label>
                                     </div>
                                     <div class="form-floating mb-3">
-                                            <input type="file" class="form-control"  name="txtAnhMinhHoaCT" id="txtAnhMinhHoaCT" />
-                                                <label for="txtAnhMinhHoaCT">Ảnh chi tiết</label>
-                                    </div>
-                                    <div class="form-floating mb-3">
                                         <div class="col-sm-10">
                                         <label >Chọn chủ đề</label>
                                         <select class="form-control" name="txtChude" id="txtChude">

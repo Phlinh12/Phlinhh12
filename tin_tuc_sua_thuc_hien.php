@@ -37,7 +37,7 @@
             } else {           
                 $sql = "
                     UPDATE `tbl_tin_tuc` 
-                    SET `tieu_de` = '".$tieu_de."', `tac_gia`='".$tac_gia."',`chu_de` = '".$chu_de."', anh_minh_hoa = '".$anh_minh_hoa."',hashtag_id='".$hashtag_id."', `mo_ta` = '".$mo_ta."', `noi_dung` = '".$noi_dung."', ngay_dang_tin='".$ngay_dang_tin."',so_lan_doc='".$so_lan_doc."',ghi_chu='".$ghi_chu."'
+                    SET `tieu_de` = '".$tieu_de."', `tac_gia`='".$tac_gia."',`chu_de` = '".$chu_de."', anh_minh_hoa = '".$anh_minh_hoa."', `mo_ta` = '".$mo_ta."', `noi_dung` = '".$noi_dung."', ngay_dang_tin='".$ngay_dang_tin."',so_lan_doc='".$so_lan_doc."',ghi_chu='".$ghi_chu."'
                     WHERE `tin_tuc_id` = '".$tin_tuc_id."'
                     ";                
             }

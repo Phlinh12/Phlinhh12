@@ -53,7 +53,6 @@
                                             <th style="text-align: center; ">Tiêu đề</th>
                                             <th style="text-align: center; ">Tác giả</th>
                                             <th style="text-align: center; ">Ảnh minh họa</th>
-                                            <th style="text-align: center; ">Ảnh chi tiết</th>
                                             <th style="text-align: center; ">Chủ đề</th>
                                             <th style="text-align: center; ">Ngày đăng tin</th>
                                             <th style="text-align: center; ">Thao tác</th>
@@ -66,7 +65,6 @@
                                             <th style="text-align: center; ">Tiêu đề</th>
                                             <th style="text-align: center; ">Tác giả</th>
                                             <th style="text-align: center; ">Ảnh minh họa</th>
-                                            <th style="text-align: center; ">Ảnh chi tiết</th>
                                             <th style="text-align: center; ">Chủ đề</th>
                                             <th style="text-align: center; ">Ngày đăng tin</th>
                                             <th style="text-align: center; ">Thao tác</th> 
@@ -94,7 +92,6 @@
                                             <td style="text-align: center; "><?php echo $row["tieu_de"];?></td>
                                             <td style="text-align: center; "><?php echo $row["tac_gia"];?></td>
                                             <td style="text-align: center; "><img src="../images/<?php echo $row["anh_minh_hoa"];?>" style="width: 50px; height: auto;"></td>
-                                            <td style="text-align: center; "><img src="../images/<?php echo $row["anh_minh_hoa_ct"];?>" style="width: 50px; height: auto;"></td>
                                             <td style="text-align: center; "><?php echo $row["chu_de"];?></td>
                                             <td style="text-align: center; "><?php echo date_format(new DateTime($row["ngay_dang_tin"]),"d-m-Y");?></td>
                                             <td style="text-align: center; "><a class="btn btn-info" href="tin_tuc_sua.php?id=<?php echo $row['tin_tuc_id'];?>">Sửa</a>
