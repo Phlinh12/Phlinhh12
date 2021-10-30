@@ -277,19 +277,19 @@
         <section class="blog_area">
             <div class="container">
                 <div class="blog_menu">
+
                     <div class="g_fillter">
                         <ul class="nav justify-content-center">
                             <li class="active" data-filter="*">
                                 <a href="#"><i class="linearicons-icons"></i></a>
                             </li>
+                            
                             <?php
                             // 1. Load file cấu hình để kết nối đến máy chủ CSDL, CSDL
-                             include('config.php');
+                            $ket_noi = mysqli_connect("localhost","root","","btl_db");
 
                             // 2. Viết câu lệnh truy vấn để lấy ra được DỮ LIỆU MONG MUỐN (TIN TỨC đã lưu trong CSDL)
-                                $sql = " SELECT * 
-                                                FROM tbl_tin_tuc, tbl_chu_de
-                                                 where tbl_tin_tuc.chu_de_id= tbl_chu_de.chu_de_id ORDER BY tbl_tin_tuc.chu_de_id DESC";
+                                $sql = " SELECT * FROM tbl_chu_de ";
                             // 3. Thực thi câu lệnh truy vấn (mục đích trả về dữ liệu các bạn cần)
                                 $noi_dung_tin_tuc = mysqli_query($ket_noi, $sql);
 
@@ -298,26 +298,25 @@
 
                             {
                              ;?>
-                            <li data-filter=".comm"><a href="#"><b><?php echo $row["chu_de"];?></b></a></li>
+                            <li data-filter=".<?php echo $row["chu_de_id"];?>"><a href="#"><b><?php echo $row["chu_de"];?></b></a></li>
                             <?php 
                              }
 
                             // 5. Đóng kết nối sau khi sử dụng xong
                             mysqli_close($ket_noi);
-                        ;?>
+                        ;?></div>
                         </ul>
                     </div>
                 </div>
-                
+                <div id="w-gallery-container" class="w-gallery-container"></div>
                     <div class="row blog_item_inner">
                     <?php 
                     // 1. Load file cấu hình để kết nối đến máy chủ CSDL, CSDL
-                    include('config.php');
-
+                    $ket_noi = mysqli_connect("localhost","root","","btl_db");
                     // 2. Viết câu lệnh truy vấn để lấy ra được DỮ LIỆU MONG MUỐN (TIN TỨC đã lưu trong CSDL)
                     $sql = " SELECT * 
-                                                FROM tbl_tin_tuc, tbl_chu_de
-                                                 where tbl_tin_tuc.chu_de_id= tbl_chu_de.chu_de_id ORDER BY tbl_tin_tuc.chu_de_id DESC";
+                             FROM tbl_tin_tuc, tbl_chu_de
+                              where tbl_tin_tuc.chu_de_id= tbl_chu_de.chu_de_id ORDER BY tbl_tin_tuc.chu_de_id DESC";
                     // 3. Thực thi câu lệnh truy vấn (mục đích trả về dữ liệu các bạn cần)
                     $noi_dung_tin_tuc = mysqli_query($ket_noi, $sql);
 
@@ -325,7 +324,7 @@
                     while ($row = mysqli_fetch_array($noi_dung_tin_tuc)) 
                     {
                     ;?>
-                            <div class="col-lg-6 comm travel edu quarantine">
+                            <div class="col-lg-6 comm travel edu quarantine w-gallery <?php echo $row['chu_de_id'];?> ">
                         <div class="big_l_blog_item"> 
                             <div class="l_blog_img">
                                 <img style="width: 570px; height: 430px;" 
@@ -354,7 +353,7 @@
 
                     // 5. Đóng kết nối sau khi sử dụng xong
                     mysqli_close($ket_noi);
-                ;?>
+                ;?></p></a></div>
                    
                 <div class="row blog_pagination">
                     
@@ -393,7 +392,7 @@
                         </div>
                     </div>
                     <div class="right">
-                         <a class="icon_btn" href="#">Kiểm tra ngay <i class="linearicons-arrow-right"></i></a>
+                         <a class="icon_btn" href="symptom-checker.php">Kiểm tra ngay <i class="linearicons-arrow-right"></i></a>
                     </div>
                 </div>
             </div>

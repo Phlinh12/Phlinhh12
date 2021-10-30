@@ -318,11 +318,12 @@
                             </div>
                             <div class="secand_part">
                                 
-                                <p><?php echo $row["noi_dung"]; ?></p>
+                                <p><?php echo $row["noi_dung"]; ?></p></br>
                                 
                             </div>
-             
-                    
+                             <div>   
+                                <img class="img-fluid" src="<?php echo $row['anh_minh_hoa_ct'] ? 'assets/images/blog/'.$row['anh_minh_hoa_ct'] :'assets/images/blog/single-blog-1.jpeg';?>" alt="" />
+                            </div>
                             
                             <div class="single_blog_bottom">
                                 <div class="row m-0 justify-content-between">
@@ -361,175 +362,51 @@
                                     </div>
                                 </div>
                             </div>
-                            <hr width="100%"
-                                color="#58547e"
-                                size="5px">
-                            <br>
-                            <div class="s_comment_list">
-                                <h3 class="cm_title_br">5 Bình luận</h3>
-                                <div class="s_comment_list_inner">
-                                    <div class="media">
-                                        <div class="d-flex">
-                                            <img style="width: 100px; height: 100px;"
-                                            class="rounded-circle" src="assets/images/comment/comment-1.jpg" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <a href="#">
-                                                <h4>Đức Huy </h4>
-                                            </a>
-                                            <p>
-                                                Đại dịch này thật kinh khủng, nó trông có vẻ như tương tự những chứng bệnh khác nhưng nó có thể đe dọa tính mạng chúng ta bất cứ lúc nào. Đeo khẩu trang và tiêm vaccine là một điều thật sự cần thiết trong lúc này.
-                                            </p>
-                                            <h6><i class="linearicons-clock3"></i> 3 giờ trước</h6>
-                                            <a class="text_btn" href="#">Trả lời <i
-                                                    class="linearicons-arrow-right"></i></a>
-                                            <div class="media">
-                                                <div class="d-flex">
-                                                    <img style="width: 80px; height: 80px;"
-                                                    class="rounded-circle" src="assets/images/comment/comment-2.png" alt="">
-                                                </div>
-                                                <div class="media-body">
-                                                    <a href="#">
-                                                        <h4>Thu Hiền</h4>
-                                                    </a>
+                            
+                        
+                           
+                               
 
-                                                    <p>
-                                                        Đúng vậy, tuy nhiên vẫn có một bộ phận người dân đang dần dần lơ là trong việc chống dịch.
-                                                    </p>
-                                                    <h6><i class="linearicons-clock3"></i> 22 phút trước</h6>
-                                                    <a class="text_btn" href="#">Trả lời
-                                                        <i class="linearicons-arrow-right"></i>
-                                                    </a>
-                                                    <div class="media">
-                                                        <div class="d-flex">
-                                                            <img style="width: 80px; height: 80px;"
-                                                            class="rounded-circle" src="assets/images/comment/comment-3.jpg" alt="">
-                                                        </div>
-                                                        <div class="media-body">
-                                                            <a href="#">
-                                                                <h4>Ngọc Anh</h4>
-                                                            </a>
+                                    
 
-                                                            <p>
-                                                                Việc ấy thật nguy hiểm, nó có thể khiến công sức của người dân và chính phủ suốt thời gian qua trở nên vô ích...
-                                                            </p>
-                                                            <h6><i class="linearicons-clock3"></i> 8 phút trước</h6>
-                                                            <a class="text_btn" href="#">Trả lời <i
-                                                                    class="linearicons-arrow-right"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="media">
-                                        <div class="d-flex">
-                                            <img style="width: 80px; height:  80px;"
-                                            class="rounded-circle" src="assets/images/comment/comment-4.jpg" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <a href="#">
-                                                <h4>Phương Anh</h4>
-                                            </a>
-
-                                            <p>
-                                                Đại dịch SARS 2003 cũng có rất nhiều nét tương đồng với COVID-19 và cũng tự biến mất sau một thời gian. Mong rằng COVID-19 cũng vậy.
-                                            </p>
-                                            <h6><i class="linearicons-clock3"></i> 1 ngày trước</h6>
-                                            <a class="text_btn" href="#">Trả lời <i
-                                                    class="linearicons-arrow-right"></i></a>
-                                            <div class="media">
-                                                <div class="d-flex">
-                                                    <img style="width: 80px; height: 80px;"
-                                                    class="rounded-circle"
-                                                    src="assets/images/comment/comment-5.jpg" alt="">
-                                                </div>
-                                                <div class="media-body">
-                                                    <a href="#">
-                                                        <h4>Quang Tuấn</h4>
-                                                    </a>
-                                                    <p>
-                                                        Điều này có lẽ rất khó, COVID-19 đã xuất hiện gần 2 năm và ngày càng sản sinh ra nhiều biến thể.
-                                                    </p>
-                                                    <h6><i class="linearicons-clock3"></i> 3 giờ trước</h6>
-                                                    <a class="text_btn" href="#">Trả lời
-                                                        <i class="linearicons-arrow-right"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="comment_box">
-                                <h3 class="cm_title_br">Bình luận</h3>
-                                <form class="row contact_us_form appoinment_form" action="contact_process.php"
-                                    id="contactForm" novalidate="novalidate">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input class="form-control" type="text" id="name" name="name"
-                                                placeholder="" />
-                                            <label><i class="linearicons-user"></i>Họ tên</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input class="form-control" type="text" id="email" name="email"
-                                                placeholder="" />
-                                            <label><i class="linearicons-envelope-open"></i>Email</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <input class="form-control" type="text" id="subject" name="subject"
-                                                placeholder="" />
-                                            <label><i class="linearicons-document"></i>
-                                                Nghề nghiệp</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <textarea name="message" id="message" cols="30" rows="10"
-                                                class="form-control"></textarea>
-                                            <label><i class="linearicons-pencil4"></i>Ý kiến của bạn</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-group checkbox_field">
-                                            <div class="checkbox">
-                                                <input type="checkbox" value="None" id="policy" name="check" />
-                                                <label class="l_text" for="policy">Lưu lại thông tin của tôi cho những lần bình luận tiếp theo.</label>
-                                            </div>
-                                            <button type="submit" class="green_btn">
-                                                Đăng
-                                            </button>
-                                        </div>
-                                    </div>
+                                
+                                  
                                 </form>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="right_sidebar">
-                            <aside class="right_widget ct_widget">
+                           <!-- <aside class="right_widget ct_widget">
                                 <div class="r_wd_title">
                                     <h3>Tổng hợp</h3>
                                 </div>
-                                <ul class="nav flex-column">
-                                    <li><a href="#"><i class="linearicons-arrow-right"></i>Diễn biến dịch bệnh
-                                            <span>(17)</span></a></li>
-                                    <li><a href="#"><i class="linearicons-arrow-right"></i>Chiến dịch tiêm chủng
-                                            <span>(29)</span></a></li>
-                                    <li><a href="#"><i class="linearicons-arrow-right"></i>Thuốc điều trị
-                                            <span>(18)</span></a></li>
-                                    <li><a href="#"><i class="linearicons-arrow-right"></i>Ảnh hưởng của đại dịch
-                                            <span>(8)</span></a></li>
-                                    <li><a href="#"><i class="linearicons-arrow-right"></i>Cách phòng chống
-                                            <span>(33)</span></a></li>
-                                    <li><a href="#"><i class="linearicons-arrow-right"></i>Các nghiên cứu
-                                            <span>(27)</span></a></li>
-                                    
-                                </ul>
+                                <?php
+                            // 1. Load file cấu hình để kết nối đến máy chủ CSDL, CSDL
+                            $ket_noi = mysqli_connect("localhost","root","","btl_db");
+
+                            // 2. Viết câu lệnh truy vấn để lấy ra được DỮ LIỆU MONG MUỐN (TIN TỨC đã lưu trong CSDL)
+                                $sql = " SELECT * FROM tbl_chu_de ";
+                            // 3. Thực thi câu lệnh truy vấn (mục đích trả về dữ liệu các bạn cần)
+                                $noi_dung_tin_tuc = mysqli_query($ket_noi, $sql);
+
+                             // 4. Hiển thị ra dữ liệu mà các bạn vừa lấy được
+                             while ($row = mysqli_fetch_array($noi_dung_tin_tuc)) 
+
+                            {
+                             ;?>
+                             <ul class="nav flex-column">
+                             <li><a href="#"><i class="linearicons-arrow-right"></i><?php echo $row["chu_de"];?>
+                                            <span></span></a></li>
+                            </ul>
+                            <?php 
+                             }
+
+                            // 5. Đóng kết nối sau khi sử dụng xong
+                            mysqli_close($ket_noi);
+                        ;?>-->
+                                
                             </aside>
                             <aside class="right_widget subs_widget">
                                 <img src="assets/images/subscribe-widget-bg.jpg" alt="">
@@ -540,71 +417,31 @@
                                     <a class="subs_btn" href="https://www.facebook.com/trungtamytequanhoankiem36ngoquyen">Theo dõi</a>
                                 </div>
                             </aside>
-                            <aside class="right_widget post_widget">
-                                <div class="r_wd_title">
-                                    <h3>Tin tức nổi bật</h3>
-                                </div>
-                                <?php 
-                    // 1. Load file cấu hình để kết nối đến máy chủ CSDL, CSDL
-                    include('config.php');
-
-                    // 2. Viết câu lệnh truy vấn để lấy ra được DỮ LIỆU MONG MUỐN (TIN TỨC đã lưu trong CSDL)
-                    $sql = "
-                              SELECT * 
-                              FROM tbl_tin_tuc 
-                              ORDER BY tin_tuc_id DESC
-                              LIMIT 3";
-
-                    // 3. Thực thi câu lệnh truy vấn (mục đích trả về dữ liệu các bạn cần)
-                    $noi_dung_tin_tuc = mysqli_query($ket_noi, $sql);
-
-                    // 4. Hiển thị ra dữ liệu mà các bạn vừa lấy được
-                    while ($row = mysqli_fetch_array($noi_dung_tin_tuc)) 
-                    {
-                    ;?>
-
-                       <div class="media">
-                                    <div class="d-flex">
-                                        <img style="width: 70px; height: 70px;" 
-                                        src="assets/images/blog/tranding-post/post-1.jpg" alt="">
-                                    </div>
-                                    <div class="media-body">
-                                        <a href="single-blog.php?id=<?php echo $row['tin_tuc_id'];?>"><h4><?php echo $row["tieu_de"] ;?></h4>
-                                    </div>
-                                </div>
-                    <?php 
-                    }
-
-                    // 5. Đóng kết nối sau khi sử dụng xong
-                    mysqli_close($ket_noi);
-                ;?>
-                                
-                            </aside>
-                            <aside class="right_widget tag_widget">
-                                <div class="r_wd_title">
-                                    <h3>Những người khác đang quan tâm</h3>
-                                </div>
-                    
-                        <ul class="nav">
-                                    <li><a href="#">Vaccine</a></li>
-                                    <li><a href="#">Corona Virus</a></li>
-                                    <li><a href="#">covid-19</a></li>
-                                    <li><a href="#">Astra Zeneca</a></li>
-                                    <li><a href="#">Pfizer</a></li>
-                                    <li><a href="#">F0</a></li>
-                                    <li><a href="#">StayAtHome</a></li>
-                                    <li><a href="#">Cách ly</a></li>
-                                </ul>
-                    
-                                
-                            </aside>
                             <aside class="right_widget wash_widget">
                                 <h6>Quy trình rửa tay</h6>
                                 <h3>Các bước rửa tay theo tiêu chuẩn của Bộ Y Tế</h3>
                                 <p>Ngày nay, tất cả mọi người đều phải cần có thói quen rửa tay, thậm chí các em nhỏ, ngay từ bậc mẫu giáo đã được giáo dục rất kỹ về các bước rửa tay - một công việc tưởng chừng đơn giản nhưng lại mang lại rất nhiều lợi ích. Vậy tại sao chúng ta phải rửa tay và rửa tay như thế nào cho đúng?
                                 </p>
-                                <a class="text_btn" href="#">Xem thêm <i class="linearicons-arrow-right"></i></a>
+                                <a class="text_btn" href="index.php">Xem thêm <i class="linearicons-arrow-right"></i></a>
                             </aside>
+                            <aside class="right_widget tag_widget">
+                                <div class="r_wd_title">
+                                    <h3>Tags</h3>
+                                </div>
+                    
+                        <ul class="nav">
+                                    <li><a >Vaccine</a></li>
+                                    <li><a>Corona Virus</a></li>
+                                    <li><a>covid-19</a></li>
+                                    <li><a>Astra Zeneca</a></li>
+                                    <li><a>Pfizer</a></li>
+                                    <li><a>F0</a></li>
+                                    <li><a>Cách ly</a></li>
+                                </ul>
+                    
+                                
+                            </aside>
+                            
                             
                         </div>
                     </div>
@@ -613,7 +450,57 @@
         </section>
         <!--================End Single Blog Content Area =================-->
 
-        
+        <!--================Related Post Area =================-->
+        <section class="related_posts_area">
+            <div class="container">
+                <div class="main_title text-center">
+                    <h5>Bài viết gần đây</h5>
+                    <h2>Có thể bạn quan tâm</h2>
+                </div>
+                <div class="row related_post_inner">
+                 <?php 
+                    // 1. Load file cấu hình để kết nối đến máy chủ CSDL, CSDL
+                    $ket_noi = mysqli_connect("localhost","root","","btl_db");
+                    // 2. Viết câu lệnh truy vấn để lấy ra được DỮ LIỆU MONG MUỐN (TIN TỨC đã lưu trong CSDL)
+                    $sql = " SELECT * 
+                             FROM tbl_tin_tuc, tbl_chu_de
+                              where tbl_tin_tuc.chu_de_id= tbl_chu_de.chu_de_id ORDER BY tbl_tin_tuc.chu_de_id DESC LIMIT 3";
+                    // 3. Thực thi câu lệnh truy vấn (mục đích trả về dữ liệu các bạn cần)
+                    $noi_dung_tin_tuc = mysqli_query($ket_noi, $sql);
+
+                    // 4. Hiển thị ra dữ liệu mà các bạn vừa lấy được
+                    while ($row = mysqli_fetch_array($noi_dung_tin_tuc)) 
+                    {
+                    ;?>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="small_l_blog_item">
+                            <div class="l_blog_img">
+                                <img style="width: 370px; height: 200px;"  
+                                class="img-fluid" src="<?php echo $row['anh_minh_hoa'] ? 'assets/images/blog/blog-grid/'.$row['anh_minh_hoa'] :'assets/images/blog/blog-grid/blog-1.jpeg';?>" alt="">
+                            </div>
+                            <div class="l_blog_text">
+                                <div class="date">
+                                <a><?php echo date("d/m/Y H:i", strtotime($row["ngay_dang_tin"]));?></a>
+                                    <a><?php echo $row["so_lan_doc"];?> lượt đọc</a>
+                                </div>
+                               <a href="single-blog.php?id=<?php echo $row['tin_tuc_id'];?>">
+                                        <h3 style="font-size: 13px; max-width: 210px;"><?php echo $row["tieu_de"] ;?></h3>
+                                    </a>
+                                    <a class="text_btn" href="single-blog.php?id=<?php echo $row['tin_tuc_id'];?>">Đọc thêm <i class="linearicons-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                        <?php 
+                    }
+
+                    // 5. Đóng kết nối sau khi sử dụng xong
+                    mysqli_close($ket_noi);
+                ;?>
+
+            </div>
+        </section>
+        <!--================End Related Post Area =================-->
+
 
         <!--================App Area =================-->
         <section class="app_area">
@@ -685,7 +572,7 @@
                         </div>
                     </div>
                     <div class="right">
-                        <a class="icon_btn" href="#">Kiểm tra ngay <i class="linearicons-arrow-right"></i></a>
+                        <a class="icon_btn" href="index.php">Kiểm tra ngay <i class="linearicons-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
