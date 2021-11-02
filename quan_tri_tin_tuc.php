@@ -73,8 +73,8 @@
                                     </tfoot>
                                     <tbody>
                                     <?php
-                                        $ket_noi = mysqli_connect("localhost","root","","btl_db");
-
+                                        include('config.php');
+                                        
                                         $sql = " SELECT * 
                                                 FROM tbl_tin_tuc, tbl_chu_de
                                                  where tbl_tin_tuc.chu_de_id= tbl_chu_de.chu_de_id ORDER BY tbl_tin_tuc.chu_de_id DESC";
@@ -91,10 +91,10 @@
                                             <td style="text-align: center; width: 30px"><?php echo $i;?></td>
                                             <td style="text-align: center; "><?php echo $row["tieu_de"];?></td>
                                             <td style="text-align: center; "><?php echo $row["tac_gia"];?></td>
-                                            <td style="text-align: center; "><img src="../images/<?php echo $row["anh_minh_hoa"];?>" style="width: 50px; height: auto;"></td>
+                                            <td style="text-align: center; "><img src="../images/blog/blog-grid/<?php echo $row["anh_minh_hoa"];?>" style="width: 50px; height: auto;"></td>
                                             <td style="text-align: center; "><?php echo $row["chu_de"];?></td>
-                                            <td style="text-align: center; "><?php echo date_format(new DateTime($row["ngay_dang_tin"]),"d-m-Y");?></td>
-                                            <td style="text-align: center; "><a class="btn btn-info" href="tin_tuc_sua.php?id=<?php echo $row['tin_tuc_id'];?>">Sửa</a>
+                                            <td style="text-align: center; "><?php echo date_format(new DateTime($row["ngay_dang_tin"]),"d-m-Y, h:i:s");?></td>
+                                            <td style="text-align: center; "><a class="btn btn-success" href="tin_tuc_sua.php?id=<?php echo $row['tin_tuc_id'];?>">Sửa</a>
                                             <span><a class="btn btn-danger" href="tin_tuc_xoa.php?id=<?php echo $row['tin_tuc_id'];?>" >Xóa</a></span></td>
                                             
                                            

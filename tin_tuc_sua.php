@@ -74,13 +74,14 @@
                             <?php
                             
                             //1. 1. Kết nối đến MÁY CHỦ DỮ LIỆU & ĐẾN CSDL 
-                            $ket_noi = mysqli_connect("localhost","root","","btl_db");
+                            include('config.php');
                             // 2. Viết câu lệnh truy vấn để lấy ra được DỮ LIỆU MONG MUỐN (TIN TỨC đã lưu trong CSDL)
                             $tin_tuc_id=$_GET["id"];
 
                              $sql = " SELECT * 
-                                     FROM tbl_tin_tuc, tbl_chu_de
-                                     where tbl_tin_tuc.chu_de_id= tbl_chu_de.chu_de_id ORDER BY tbl_tin_tuc.chu_de_id DESC";
+                                FROM tbl_tin_tuc 
+                                WHERE tin_tuc_id= ".$tin_tuc_id."
+                                ORDER BY  tin_tuc_id DESC";
                             // 3. Thực thi câu lệnh truy vấn (mục đích trả về dữ liệu các bạn cần)
                             $noi_dung_tin_tuc=mysqli_query($ket_noi,$sql);
                             //4.
@@ -105,7 +106,7 @@
                                         <label >Chọn chủ đề</label>
                                         <select class="form-control" name="txtChude" id="txtChude">
                                         <?php  
-                                            $ket_noi = mysqli_connect("localhost","root","","btl_db");
+                                            include('config.php');
                                             $sql= "SELECT * FROM tbl_chu_de";
                                             $ket_qua = mysqli_query($ket_noi,$sql);
 
@@ -130,16 +131,10 @@
                                         
                                             <label for="txtNoiDung">Nội dung bài viết</label>
                                     </div>
-                                    
-                                    <div class="form-floating mb-3">
-                                        <input type="date" class="form-control" id="txtNgayDangTin" name="txtNgayDangTin" placeholder="Chọn ngày đăng tin" value="<?php echo $row['ngay_dang_tin'];?>" />
-                                            <label for="txtNgayDangTin">Ngày đăng tin</label>
-                                    </div>
                                         <div class="form-floating mb-3">
                                             <input class="form-control" id="txtSoLanDoc" name="txtSoLanDoc" placeholder="Số lần đọc" value="<?php echo $row['so_lan_doc'];?>"/>
                                                 <label for="txtSoLanDoc">Số lần đọc</label>
                                         </div>
-                                    
                                     <div class="form-floating mb-3">
                                         <input class="form-control" id="txtGhiChu" name="txtGhiChu" placeholder="Ghi chú" />
                                             <label for="txtGhiChu">Ghi chú</label>

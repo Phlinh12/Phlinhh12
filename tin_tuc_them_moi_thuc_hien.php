@@ -15,7 +15,7 @@
     <body class="sb-nav-fixed">
         <?php
         //viết các câu lệnh thêm mới tin tức ở đây
-        $ketnoi=mysqli_connect("localhost","root","","btl_db");
+        include('config.php');
 
         //lấy ra được các dữ liệu mà trang TIN TỨC THÊM MỚI chuyển sang
         $tieu_de = $_POST["txtTieuDe"];
@@ -39,13 +39,31 @@
         } else {
             $anh_minh_hoa=basename($_FILES["txtAnhMinhHoa"]["name"]);
         }
-
+        
         //VIết câu lệnh truy vấn để thêm mới dữ liệu vào bảng TIN TỨC trong CSDL
-        $sql= "INSERT INTO tbl_tin_tuc (tin_tuc_id, tieu_de, chu_de_id, mo_ta, noi_dung, tac_gia, anh_minh_hoa, ngay_dang_tin, so_lan_doc, ghi_chu) VALUES (NULL, '".$tieu_de."', '".$chu_de_id."', '".$mo_ta."', '".$noi_dung."', '".$tac_gia."', '".$anh_minh_hoa."', '".$ngay_dang_tin."', '".$so_lan_doc."', '".$ghi_chu."');";
-        $noi_dung_tin_tuc=mysqli_query($ketnoi,$sql);
+        $sql= "INSERT INTO tbl_tin_tuc (tin_tuc_id, tieu_de,hashtag_id , chu_de_id, mo_ta, noi_dung, tac_gia, anh_minh_hoa, ngay_dang_tin, so_lan_doc, ghi_chu) 
+        VALUES (NULL, '".$tieu_de."','1', '".$chu_de_id."', '".$mo_ta."', '".$noi_dung."', '".$tac_gia."', '".$anh_minh_hoa."', CURRENT_TIMESTAMP , '".$so_lan_doc."', '".$ghi_chu."');";
+        $noi_dung_tin_tuc=mysqli_query($ket_noi,$sql);
         
-        //echo $sql; exit();
         
+        $sql1 = "SELECT * FROM tbl_gui_email";   
+        $noi_dung = mysqli_query($ket_noi,$sql1);
+    
+
+        while ($row = mysqli_fetch_array($noi_dung)) {
+            $to      = (string)$row['email'];
+            $subject = 'PC-Covid';
+            $message =  '[Tin tức mới] '.(string)$_POST['txtTieuDe']."\n"
+            ."\n".'     Truy cập trang COVID-19.php để biết thêm chi tiết.'
+            ."\n".'     Mọi thông tin chi tiết vui lòng liên hệ:'
+            ."\n".'     Hotline: 024 3825 5599'
+            ."\n".'     Email: pccovid19s@gmail.com'
+            ."\n".'     Website: https://halncovid.000webhostapp.com/'
+            ."\n".'     Đ/c: 36 Ngô Quyền, phường Hàng Bài,quận Hoàn Kiếm, Hà Nội';
+
+            mail($to,$subject,$message.' Truy cập trang https://halncovid.000webhostapp.com/ để biết thêm chi tiết');
+        }
+
         // hiển thị ra thông báo bạn đã thêm mới tin tức thành công và đẩy các bạn về trang quản trị tin tức
          echo "
                 <script type='text/javascript'>

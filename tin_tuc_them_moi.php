@@ -78,11 +78,11 @@
                             <div class="card-body">
                                 <form method="POST" action="tin_tuc_them_moi_thuc_hien.php" enctype="multipart/form-data">
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="txtTieuDe" name="txtTieuDe" placeholder="Tiêu đề bài viết" />
+                                        <input class="form-control" id="txtTieuDe" name="txtTieuDe" placeholder="Tiêu đề bài viết" required/>
                                             <label for="txtTieuDe">Tiêu đề bài viết</label>
                                     </div>
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="txtTacGia" name="txtTacGia" placeholder="Tác giả bài viết" />
+                                        <input class="form-control" id="txtTacGia" name="txtTacGia" placeholder="Tác giả bài viết" required/>
                                             <label for="txtTacGia">Tác giả bài viết</label>
                                     </div>
                                         <div class="form-floating mb-3">
@@ -93,7 +93,7 @@
                                          <select  name="txtChude" id="txtChude" placeholder="Chọn chủ đề" >
                                        
                                         <?php  
-                                            $ket_noi = mysqli_connect("localhost","root","","btl_db");
+                                            include('config.php');
                                             $sql= "SELECT * FROM tbl_chu_de";
                                         $noi_dung_tin_tuc=mysqli_query($ket_noi,$sql);
 
@@ -114,22 +114,12 @@
                                         <textarea placeholder="Nội dung bài viết"  name="txtNoiDung" id="txtNoiDung" ></textarea>
                                             <label for="txtNoiDung">Nội dung bài viết</label>
                                     </div>
-                                    
                                     </div>
-                                    
-                                    </div>
-                                    <div class="col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="date" class="form-control" id="txtNgayDangTin" name="txtNgayDangTin" placeholder="Chọn ngày đăng tin" />
-                                            <label for="txtNgayDangTin">Ngày đăng tin</label>
-                                    </div>
-                                    </div>
-                                    <div class="col-md-6">
+                                    </div>                
                                         <div class="form-floating mb-3">
                                             <input class="form-control" id="txtSoLanDoc" name="txtSoLanDoc" placeholder="Số lần đọc" />
                                                 <label for="txtSoLanDoc">Số lần đọc</label>
                                         </div>
-                                    </div>
                                     <div class="form-floating mb-3">
                                         <input class="form-control" id="txtGhiChu" name="txtGhiChu" placeholder="Ghi chú" />
                                             <label for="txtGhiChu">Ghi chú</label>

@@ -2,7 +2,7 @@
         <?php
         //viết các câu lệnh thêm mới tin tức ở đây
 
-        $ketnoi=mysqli_connect("localhost","root","","btl_db");
+        include('config.php');
 
         //lấy ra được các dữ liệu mà trang TIN TỨC THÊM MỚI chuyển sang
         $tin_tuc_id=$_POST["txtID"];
@@ -31,18 +31,19 @@
             if($anh_minh_hoa == NULL) {                         
                 $sql = "
                         UPDATE tbl_tin_tuc 
-                        SET tieu_de = '".$tieu_de."',tac_gia='".$tac_gia."', chu_de_id='".$chu_de_id."',mo_ta = '".$mo_ta."', `noi_dung` = '".$noi_dung."',ngay_dang_tin='".$ngay_dang_tin."',so_lan_doc='".$so_lan_doc."',ghi_chu='".$ghi_chu."'
+                        SET tieu_de = '".$tieu_de."',`hashtag_id` = '3',tac_gia='".$tac_gia."', chu_de_id='".$chu_de_id."',mo_ta = '".$mo_ta."', `noi_dung` = '".$noi_dung."',ngay_dang_tin= CURRENT_TIMESTAMP, so_lan_doc='".$so_lan_doc."',ghi_chu='".$ghi_chu."'
                         WHERE `tin_tuc_id` = '".$tin_tuc_id."'
                         ";
             } else {           
                 $sql = "
                     UPDATE `tbl_tin_tuc` 
-                    SET `tieu_de` = '".$tieu_de."', `tac_gia`='".$tac_gia."',`chu_de` = '".$chu_de."', anh_minh_hoa = '".$anh_minh_hoa."', `mo_ta` = '".$mo_ta."', `noi_dung` = '".$noi_dung."', ngay_dang_tin='".$ngay_dang_tin."',so_lan_doc='".$so_lan_doc."',ghi_chu='".$ghi_chu."'
+                    SET `tieu_de` = '".$tieu_de."',`hashtag_id` = '3', `tac_gia`='".$tac_gia."',`chu_de_id` = '".$chu_de_id."', anh_minh_hoa = '".$anh_minh_hoa."', `mo_ta` = '".$mo_ta."', `noi_dung` = '".$noi_dung."', ngay_dang_tin= CURRENT_TIMESTAMP, so_lan_doc='".$so_lan_doc."',ghi_chu='".$ghi_chu."'
                     WHERE `tin_tuc_id` = '".$tin_tuc_id."'
                     ";                
             }
+
         //echo $sql; exit();
-        $noi_dung_tin_tuc=mysqli_query($ketnoi,$sql);
+        $noi_dung_tin_tuc=mysqli_query($ket_noi,$sql);
 
         // while ($row = mysql_fetch_array($noi_dung_tin_tuc)) {
         // 	# code...
